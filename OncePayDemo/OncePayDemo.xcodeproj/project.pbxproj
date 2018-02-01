@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		485C2DC62020435700183093 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C2DC52020435700183093 /* Security.framework */; };
 		485C2DCE20204D7000183093 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C2DCD20204D7000183093 /* libPaymentControl.a */; };
-		485C2DD2202068B600183093 /* OncePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 485C2DD1202068B600183093 /* OncePay.m */; };
 		4883C7402020108C00707061 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883C73F2020108C00707061 /* AppDelegate.m */; };
 		4883C7432020108C00707061 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4883C7422020108C00707061 /* ViewController.mm */; };
 		4883C7462020108C00707061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4883C7442020108C00707061 /* Main.storyboard */; };
@@ -60,8 +59,6 @@
 		485C2DCA20204D7000183093 /* UPAPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPAPayPlugin.h; sourceTree = "<group>"; };
 		485C2DCB20204D7000183093 /* UPAPayPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPAPayPluginDelegate.h; sourceTree = "<group>"; };
 		485C2DCD20204D7000183093 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
-		485C2DD0202068B600183093 /* OncePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OncePay.h; sourceTree = "<group>"; };
-		485C2DD1202068B600183093 /* OncePay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OncePay.m; sourceTree = "<group>"; };
 		4883C73B2020108C00707061 /* OncePayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OncePayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4883C73E2020108C00707061 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4883C73F2020108C00707061 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -241,8 +238,6 @@
 			children = (
 				4883C772202010CF00707061 /* OncePayManager.h */,
 				4883C773202010D000707061 /* OncePayManager.m */,
-				485C2DD0202068B600183093 /* OncePay.h */,
-				485C2DD1202068B600183093 /* OncePay.m */,
 			);
 			path = OncePay;
 			sourceTree = SOURCE_ROOT;
@@ -423,7 +418,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				485C2DD2202068B600183093 /* OncePay.m in Sources */,
 				4883C7432020108C00707061 /* ViewController.mm in Sources */,
 				4883C774202010D000707061 /* OncePayManager.m in Sources */,
 				4883C74E2020108C00707061 /* main.m in Sources */,
