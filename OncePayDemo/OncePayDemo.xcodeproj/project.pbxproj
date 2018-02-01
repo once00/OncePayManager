@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		485C2DC62020435700183093 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C2DC52020435700183093 /* Security.framework */; };
+		485C2DCE20204D7000183093 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C2DCD20204D7000183093 /* libPaymentControl.a */; };
+		485C2DD2202068B600183093 /* OncePay.m in Sources */ = {isa = PBXBuildFile; fileRef = 485C2DD1202068B600183093 /* OncePay.m */; };
+		4883C7402020108C00707061 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883C73F2020108C00707061 /* AppDelegate.m */; };
+		4883C7432020108C00707061 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4883C7422020108C00707061 /* ViewController.mm */; };
+		4883C7462020108C00707061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4883C7442020108C00707061 /* Main.storyboard */; };
+		4883C7482020108C00707061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4883C7472020108C00707061 /* Assets.xcassets */; };
+		4883C74B2020108C00707061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4883C7492020108C00707061 /* LaunchScreen.storyboard */; };
+		4883C74E2020108C00707061 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883C74D2020108C00707061 /* main.m */; };
+		4883C7582020108C00707061 /* OncePayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883C7572020108C00707061 /* OncePayDemoTests.m */; };
+		4883C7632020108C00707061 /* OncePayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883C7622020108C00707061 /* OncePayDemoUITests.m */; };
+		4883C774202010D000707061 /* OncePayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883C773202010D000707061 /* OncePayManager.m */; };
+		4883C77B202011D900707061 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4883C778202011D900707061 /* README.txt */; };
+		4883C77C202011D900707061 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C77A202011D900707061 /* libWeChatSDK.a */; };
+		4883C780202013BA00707061 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4883C77E202013BA00707061 /* AlipaySDK.bundle */; };
+		4883C781202013BA00707061 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C77F202013BA00707061 /* AlipaySDK.framework */; };
+		4883C7842020140B00707061 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C7832020140B00707061 /* libc++.tbd */; };
+		4883C7862020141500707061 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C7852020141500707061 /* libz.tbd */; };
+		4883C7882020142300707061 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C7872020142200707061 /* SystemConfiguration.framework */; };
+		4883C78A2020143500707061 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C7892020143500707061 /* CoreTelephony.framework */; };
+		4883C78C2020144100707061 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C78B2020144100707061 /* QuartzCore.framework */; };
+		4883C78E2020144C00707061 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C78D2020144C00707061 /* CoreText.framework */; };
+		4883C7902020146600707061 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C78F2020146600707061 /* CoreGraphics.framework */; };
+		4883C7922020146D00707061 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C7912020146C00707061 /* UIKit.framework */; };
+		4883C7942020147600707061 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C7932020147600707061 /* Foundation.framework */; };
+		4883C7962020148000707061 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C7952020148000707061 /* CFNetwork.framework */; };
+		4883C7982020148F00707061 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C7972020148F00707061 /* CoreMotion.framework */; };
+		4883C79A202014C200707061 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4883C799202014C200707061 /* libsqlite3.0.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4883C7542020108C00707061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4883C7332020108C00707061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4883C73A2020108C00707061;
+			remoteInfo = OncePayDemo;
+		};
+		4883C75F2020108C00707061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4883C7332020108C00707061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4883C73A2020108C00707061;
+			remoteInfo = OncePayDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		485C2DC52020435700183093 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		485C2DC920204D7000183093 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		485C2DCA20204D7000183093 /* UPAPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPAPayPlugin.h; sourceTree = "<group>"; };
+		485C2DCB20204D7000183093 /* UPAPayPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPAPayPluginDelegate.h; sourceTree = "<group>"; };
+		485C2DCD20204D7000183093 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		485C2DD0202068B600183093 /* OncePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OncePay.h; sourceTree = "<group>"; };
+		485C2DD1202068B600183093 /* OncePay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OncePay.m; sourceTree = "<group>"; };
+		4883C73B2020108C00707061 /* OncePayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OncePayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4883C73E2020108C00707061 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4883C73F2020108C00707061 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4883C7412020108C00707061 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4883C7422020108C00707061 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		4883C7452020108C00707061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4883C7472020108C00707061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4883C74A2020108C00707061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4883C74C2020108C00707061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4883C74D2020108C00707061 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4883C7532020108C00707061 /* OncePayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OncePayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4883C7572020108C00707061 /* OncePayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OncePayDemoTests.m; sourceTree = "<group>"; };
+		4883C7592020108C00707061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4883C75E2020108C00707061 /* OncePayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OncePayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4883C7622020108C00707061 /* OncePayDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OncePayDemoUITests.m; sourceTree = "<group>"; };
+		4883C7642020108C00707061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4883C772202010CF00707061 /* OncePayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OncePayManager.h; sourceTree = "<group>"; };
+		4883C773202010D000707061 /* OncePayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OncePayManager.m; sourceTree = "<group>"; };
+		4883C776202011D900707061 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		4883C777202011D900707061 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		4883C778202011D900707061 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		4883C779202011D900707061 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		4883C77A202011D900707061 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		4883C77E202013BA00707061 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		4883C77F202013BA00707061 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		4883C7832020140B00707061 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4883C7852020141500707061 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4883C7872020142200707061 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4883C7892020143500707061 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4883C78B2020144100707061 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4883C78D2020144C00707061 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4883C78F2020146600707061 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4883C7912020146C00707061 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4883C7932020147600707061 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4883C7952020148000707061 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4883C7972020148F00707061 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4883C799202014C200707061 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4883C7382020108C00707061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4883C7962020148000707061 /* CFNetwork.framework in Frameworks */,
+				4883C78A2020143500707061 /* CoreTelephony.framework in Frameworks */,
+				485C2DC62020435700183093 /* Security.framework in Frameworks */,
+				4883C7842020140B00707061 /* libc++.tbd in Frameworks */,
+				4883C79A202014C200707061 /* libsqlite3.0.tbd in Frameworks */,
+				4883C7862020141500707061 /* libz.tbd in Frameworks */,
+				4883C7882020142300707061 /* SystemConfiguration.framework in Frameworks */,
+				4883C7982020148F00707061 /* CoreMotion.framework in Frameworks */,
+				485C2DCE20204D7000183093 /* libPaymentControl.a in Frameworks */,
+				4883C7942020147600707061 /* Foundation.framework in Frameworks */,
+				4883C7922020146D00707061 /* UIKit.framework in Frameworks */,
+				4883C7902020146600707061 /* CoreGraphics.framework in Frameworks */,
+				4883C78E2020144C00707061 /* CoreText.framework in Frameworks */,
+				4883C78C2020144100707061 /* QuartzCore.framework in Frameworks */,
+				4883C77C202011D900707061 /* libWeChatSDK.a in Frameworks */,
+				4883C781202013BA00707061 /* AlipaySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4883C7502020108C00707061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4883C75B2020108C00707061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		485C2DC720204D7000183093 /* paymentcontrol */ = {
+			isa = PBXGroup;
+			children = (
+				485C2DC820204D7000183093 /* inc */,
+				485C2DCC20204D7000183093 /* libs */,
+			);
+			path = paymentcontrol;
+			sourceTree = "<group>";
+		};
+		485C2DC820204D7000183093 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				485C2DC920204D7000183093 /* UPPaymentControl.h */,
+				485C2DCA20204D7000183093 /* UPAPayPlugin.h */,
+				485C2DCB20204D7000183093 /* UPAPayPluginDelegate.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		485C2DCC20204D7000183093 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				485C2DCD20204D7000183093 /* libPaymentControl.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		4883C7322020108C00707061 = {
+			isa = PBXGroup;
+			children = (
+				4883C73D2020108C00707061 /* OncePayDemo */,
+				4883C7562020108C00707061 /* OncePayDemoTests */,
+				4883C7612020108C00707061 /* OncePayDemoUITests */,
+				4883C73C2020108C00707061 /* Products */,
+				4883C7822020140A00707061 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4883C73C2020108C00707061 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4883C73B2020108C00707061 /* OncePayDemo.app */,
+				4883C7532020108C00707061 /* OncePayDemoTests.xctest */,
+				4883C75E2020108C00707061 /* OncePayDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4883C73D2020108C00707061 /* OncePayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4883C771202010C100707061 /* OncePay */,
+				4883C770202010C100707061 /* SDK */,
+				4883C73E2020108C00707061 /* AppDelegate.h */,
+				4883C73F2020108C00707061 /* AppDelegate.m */,
+				4883C7412020108C00707061 /* ViewController.h */,
+				4883C7422020108C00707061 /* ViewController.mm */,
+				4883C7442020108C00707061 /* Main.storyboard */,
+				4883C7472020108C00707061 /* Assets.xcassets */,
+				4883C7492020108C00707061 /* LaunchScreen.storyboard */,
+				4883C74C2020108C00707061 /* Info.plist */,
+				4883C74D2020108C00707061 /* main.m */,
+			);
+			path = OncePayDemo;
+			sourceTree = "<group>";
+		};
+		4883C7562020108C00707061 /* OncePayDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4883C7572020108C00707061 /* OncePayDemoTests.m */,
+				4883C7592020108C00707061 /* Info.plist */,
+			);
+			path = OncePayDemoTests;
+			sourceTree = "<group>";
+		};
+		4883C7612020108C00707061 /* OncePayDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4883C7622020108C00707061 /* OncePayDemoUITests.m */,
+				4883C7642020108C00707061 /* Info.plist */,
+			);
+			path = OncePayDemoUITests;
+			sourceTree = "<group>";
+		};
+		4883C770202010C100707061 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				485C2DC720204D7000183093 /* paymentcontrol */,
+				4883C77D202013BA00707061 /* AlipaySDK2.0) */,
+				4883C775202011D900707061 /* WechatSDK1.8.2 */,
+			);
+			path = SDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		4883C771202010C100707061 /* OncePay */ = {
+			isa = PBXGroup;
+			children = (
+				4883C772202010CF00707061 /* OncePayManager.h */,
+				4883C773202010D000707061 /* OncePayManager.m */,
+				485C2DD0202068B600183093 /* OncePay.h */,
+				485C2DD1202068B600183093 /* OncePay.m */,
+			);
+			path = OncePay;
+			sourceTree = SOURCE_ROOT;
+		};
+		4883C775202011D900707061 /* WechatSDK1.8.2 */ = {
+			isa = PBXGroup;
+			children = (
+				4883C776202011D900707061 /* WXApi.h */,
+				4883C777202011D900707061 /* WXApiObject.h */,
+				4883C778202011D900707061 /* README.txt */,
+				4883C779202011D900707061 /* WechatAuthSDK.h */,
+				4883C77A202011D900707061 /* libWeChatSDK.a */,
+			);
+			path = WechatSDK1.8.2;
+			sourceTree = "<group>";
+		};
+		4883C77D202013BA00707061 /* AlipaySDK2.0) */ = {
+			isa = PBXGroup;
+			children = (
+				4883C77E202013BA00707061 /* AlipaySDK.bundle */,
+				4883C77F202013BA00707061 /* AlipaySDK.framework */,
+			);
+			path = "AlipaySDK2.0)";
+			sourceTree = "<group>";
+		};
+		4883C7822020140A00707061 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				485C2DC52020435700183093 /* Security.framework */,
+				4883C799202014C200707061 /* libsqlite3.0.tbd */,
+				4883C7972020148F00707061 /* CoreMotion.framework */,
+				4883C7952020148000707061 /* CFNetwork.framework */,
+				4883C7932020147600707061 /* Foundation.framework */,
+				4883C7912020146C00707061 /* UIKit.framework */,
+				4883C78F2020146600707061 /* CoreGraphics.framework */,
+				4883C78D2020144C00707061 /* CoreText.framework */,
+				4883C78B2020144100707061 /* QuartzCore.framework */,
+				4883C7892020143500707061 /* CoreTelephony.framework */,
+				4883C7872020142200707061 /* SystemConfiguration.framework */,
+				4883C7852020141500707061 /* libz.tbd */,
+				4883C7832020140B00707061 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4883C73A2020108C00707061 /* OncePayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4883C7672020108C00707061 /* Build configuration list for PBXNativeTarget "OncePayDemo" */;
+			buildPhases = (
+				4883C7372020108C00707061 /* Sources */,
+				4883C7382020108C00707061 /* Frameworks */,
+				4883C7392020108C00707061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OncePayDemo;
+			productName = OncePayDemo;
+			productReference = 4883C73B2020108C00707061 /* OncePayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4883C7522020108C00707061 /* OncePayDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4883C76A2020108C00707061 /* Build configuration list for PBXNativeTarget "OncePayDemoTests" */;
+			buildPhases = (
+				4883C74F2020108C00707061 /* Sources */,
+				4883C7502020108C00707061 /* Frameworks */,
+				4883C7512020108C00707061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4883C7552020108C00707061 /* PBXTargetDependency */,
+			);
+			name = OncePayDemoTests;
+			productName = OncePayDemoTests;
+			productReference = 4883C7532020108C00707061 /* OncePayDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4883C75D2020108C00707061 /* OncePayDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4883C76D2020108C00707061 /* Build configuration list for PBXNativeTarget "OncePayDemoUITests" */;
+			buildPhases = (
+				4883C75A2020108C00707061 /* Sources */,
+				4883C75B2020108C00707061 /* Frameworks */,
+				4883C75C2020108C00707061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4883C7602020108C00707061 /* PBXTargetDependency */,
+			);
+			name = OncePayDemoUITests;
+			productName = OncePayDemoUITests;
+			productReference = 4883C75E2020108C00707061 /* OncePayDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4883C7332020108C00707061 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "曹绍奇";
+				TargetAttributes = {
+					4883C73A2020108C00707061 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4883C7522020108C00707061 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4883C73A2020108C00707061;
+					};
+					4883C75D2020108C00707061 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4883C73A2020108C00707061;
+					};
+				};
+			};
+			buildConfigurationList = 4883C7362020108C00707061 /* Build configuration list for PBXProject "OncePayDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4883C7322020108C00707061;
+			productRefGroup = 4883C73C2020108C00707061 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4883C73A2020108C00707061 /* OncePayDemo */,
+				4883C7522020108C00707061 /* OncePayDemoTests */,
+				4883C75D2020108C00707061 /* OncePayDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4883C7392020108C00707061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4883C780202013BA00707061 /* AlipaySDK.bundle in Resources */,
+				4883C74B2020108C00707061 /* LaunchScreen.storyboard in Resources */,
+				4883C7482020108C00707061 /* Assets.xcassets in Resources */,
+				4883C77B202011D900707061 /* README.txt in Resources */,
+				4883C7462020108C00707061 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4883C7512020108C00707061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4883C75C2020108C00707061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4883C7372020108C00707061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485C2DD2202068B600183093 /* OncePay.m in Sources */,
+				4883C7432020108C00707061 /* ViewController.mm in Sources */,
+				4883C774202010D000707061 /* OncePayManager.m in Sources */,
+				4883C74E2020108C00707061 /* main.m in Sources */,
+				4883C7402020108C00707061 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4883C74F2020108C00707061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4883C7582020108C00707061 /* OncePayDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4883C75A2020108C00707061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4883C7632020108C00707061 /* OncePayDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4883C7552020108C00707061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4883C73A2020108C00707061 /* OncePayDemo */;
+			targetProxy = 4883C7542020108C00707061 /* PBXContainerItemProxy */;
+		};
+		4883C7602020108C00707061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4883C73A2020108C00707061 /* OncePayDemo */;
+			targetProxy = 4883C75F2020108C00707061 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4883C7442020108C00707061 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4883C7452020108C00707061 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4883C7492020108C00707061 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4883C74A2020108C00707061 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4883C7652020108C00707061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4883C7662020108C00707061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4883C7682020108C00707061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 893D33K8C3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/AlipaySDK2.0)",
+				);
+				INFOPLIST_FILE = OncePayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/WechatSDK1.8.2",
+					"$(PROJECT_DIR)/SDK/paymentcontrol/libs",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xx.OncePayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4883C7692020108C00707061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 893D33K8C3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/AlipaySDK2.0)",
+				);
+				INFOPLIST_FILE = OncePayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/WechatSDK1.8.2",
+					"$(PROJECT_DIR)/SDK/paymentcontrol/libs",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xx.OncePayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4883C76B2020108C00707061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 893D33K8C3;
+				INFOPLIST_FILE = OncePayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xx.OncePayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OncePayDemo.app/OncePayDemo";
+			};
+			name = Debug;
+		};
+		4883C76C2020108C00707061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 893D33K8C3;
+				INFOPLIST_FILE = OncePayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xx.OncePayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OncePayDemo.app/OncePayDemo";
+			};
+			name = Release;
+		};
+		4883C76E2020108C00707061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 893D33K8C3;
+				INFOPLIST_FILE = OncePayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xx.OncePayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OncePayDemo;
+			};
+			name = Debug;
+		};
+		4883C76F2020108C00707061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 893D33K8C3;
+				INFOPLIST_FILE = OncePayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xx.OncePayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OncePayDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4883C7362020108C00707061 /* Build configuration list for PBXProject "OncePayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4883C7652020108C00707061 /* Debug */,
+				4883C7662020108C00707061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4883C7672020108C00707061 /* Build configuration list for PBXNativeTarget "OncePayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4883C7682020108C00707061 /* Debug */,
+				4883C7692020108C00707061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4883C76A2020108C00707061 /* Build configuration list for PBXNativeTarget "OncePayDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4883C76B2020108C00707061 /* Debug */,
+				4883C76C2020108C00707061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4883C76D2020108C00707061 /* Build configuration list for PBXNativeTarget "OncePayDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4883C76E2020108C00707061 /* Debug */,
+				4883C76F2020108C00707061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4883C7332020108C00707061 /* Project object */;
+}
