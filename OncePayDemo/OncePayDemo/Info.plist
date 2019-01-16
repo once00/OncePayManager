@@ -2,20 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>LSApplicationQueriesSchemes  </key>
-	<array>
-		<string>uppayx3</string>
-		<string>uppayx2</string>
-		<string>uppayx1</string>
-		<string>uppaywallet</string>
-		<string>uppaysdk</string>
-	</array>
-	<key>CFBundleDisplayName</key>
-	<string></string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -47,7 +37,7 @@
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wxb4ba3c02aa476ea1</string>
+				<string>wxd930ea5d5a258f4f</string>
 			</array>
 		</dict>
 		<dict>
@@ -63,8 +53,54 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>uppaysdk</string>
+		<string>uppaywallet</string>
+		<string>uppayx1</string>
+		<string>uppayx2</string>
+		<string>uppayx3</string>
+		<string>weixin</string>
+		<string>wechat</string>
+	</array>
+	<key>LSApplicationQueriesSchemes  </key>
+	<array>
+		<string>wechat</string>
+		<string>weixin</string>
+		<string>uppayx3</string>
+		<string>uppayx2</string>
+		<string>uppayx1</string>
+		<string>uppaywallet</string>
+		<string>uppaysdk</string>
+	</array>
+	<key>LSApplicationQueriesSchemes - 2</key>
+	<array>
+		<string>mqqapi</string>
+		<string>mqq</string>
+		<string>mqqOpensdkSSoLogin</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>wtloginmqq2</string>
+		<string>weibosdk2.5</string>
+		<string>weibosdk</string>
+		<string>sinaweibo</string>
+		<string>sinaweibohd</string>
+		<string>weixin</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppTransportSecurity - 2</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -86,10 +122,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

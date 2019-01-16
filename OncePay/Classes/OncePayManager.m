@@ -61,6 +61,68 @@
         }];
     }
 }
+//授权
+- (void)OncePayWithAuthParameter:(id)parameter callBack:(OncePayManagerBack)payBack{
+    // 判断手机有没有微信
+    if ([WXApi isWXAppInstalled]) {
+        NSLog(@"安装了微信");
+    }else{
+        NSLog(@"还没有安装微信");
+    }
+    NSAssert(parameter, @"订单信息不能为空");
+    // 发起支付
+    self.payBack = payBack;
+    if ([parameter isKindOfClass:[PayReq class]]) {
+        //微信
+        [WXApi sendReq:(SendAuthReq *)parameter];
+    }else if ([parameter isKindOfClass:[NSString class]]){
+        //支付宝
+        [[AlipaySDK defaultService] payOrder:parameter fromScheme:self.appSchemeDict[ZhiFuBaoTypeUrl] callback:^(NSDictionary* resultDic) {
+            NSString * status=resultDic[@"resultStatus"];
+            NSString * memo=resultDic[@"memo"];
+            if ([status isEqualToString:@"6001"]) {
+                //取消
+            }else if ([status isEqualToString:@"9000"]){
+                //成功
+            }
+            if (self.payBack) {
+                self.payBack(memo);
+            }
+        }];
+        
+        
+        
+        [[AlipaySDK defaultService] auth_V2WithInfo:parameter fromScheme:@"OncePayDemo"
+                                           callback:^(NSDictionary *resultDic) {
+                                               NSLog(@"result = %@",resultDic);
+                                               
+                                               NSString * code=resultDic[@"resultStatus"];
+                                               if (![code isEqualToString:@"9000"]) {
+                                                   //失败
+                                               }else{
+                                                   //成功
+                                               }
+                                               if (self.payBack) {
+                                                   self.payBack(resultDic[@"result"]);
+                                               }
+                                               
+//                                               // 解析 auth code
+//                                               NSString *result = resultDic[@"result"];
+//                                               NSString *authCode = nil;
+//                                               if (result.length>0) {
+//                                                   NSArray *resultArr = [result componentsSeparatedByString:@"&"];
+//                                                   for (NSString *subResult in resultArr) {
+//                                                       if (subResult.length > 10 && [subResult hasPrefix:@"auth_code="]) {
+//                                                           authCode = [subResult substringFromIndex:10];
+//                                                           break;
+//                                                       }
+//                                                   }
+//                                               }
+//                                               NSLog(@"授权结果 authCode = %@", authCode?:@"");
+                                           }];
+    }
+}
+
 //银联
 - (void)OncePayWithunionpayParameter:(NSString *)parameter payvc:(UIViewController *)vc callBack:(OnceunionpayManagerBack)payBack{
     self.unpayBack = payBack;
@@ -120,6 +182,7 @@
                     self.payBack(memo);
                 }
             }];
+            
         }
         return YES;
     }else if ([url.host isEqualToString:@"pay"]) {

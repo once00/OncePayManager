@@ -17,7 +17,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef void(^OncePayManagerBack)(NSString *errStr);
+typedef void(^OncePayManagerBack)(id errStr);
 typedef void(^OnceunionpayManagerBack)(NSString *errStr,NSString *data);
 @interface OncePayManager : NSObject
 
@@ -37,6 +37,17 @@ typedef void(^OnceunionpayManagerBack)(NSString *errStr,NSString *data);
  * @param payBack     回调，有返回状态信息
  */
 - (void)OncePayWithOrderParameter:(id)parameter callBack:(OncePayManagerBack)payBack;
+
+/**
+ *
+ *  发起授权(微信.支付宝)
+ *
+ *@param parameter 签名q信息（后台生成给我们，需要签名，其中签名为了安全起见要放在后台做）
+ schemeStr 调用支付的app注册在info.plist中的scheme
+ 支付结果回调Block，用于wap支付结果回调（非跳转钱包支付）
+ * @param payBack     回调，有返回状态信息
+ */
+- (void)OncePayWithAuthParameter:(id)parameter callBack:(OncePayManagerBack)payBack;
 
 /**
 *
